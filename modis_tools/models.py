@@ -3,7 +3,7 @@
 from datetime import datetime
 from typing import List, Optional
 
-from pydantic import AnyUrl, BaseModel, HttpUrl, validator
+from pydantic.v1 import AnyUrl, BaseModel, HttpUrl, validator
 
 
 # Shared structure

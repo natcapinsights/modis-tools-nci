@@ -3,7 +3,7 @@ from pathlib import Path
 from typing import Any, Iterable, List, Optional, Tuple, Type, TypeVar, Union
 from urllib.parse import urlsplit
 
-from pydantic.networks import AnyUrl, HttpUrl
+from pydantic.v1.networks import AnyUrl, HttpUrl
 from requests.auth import HTTPProxyAuth
 from requests.models import Response
 from tqdm import tqdm
@@ -105,7 +105,7 @@ class GranuleHandler:
                 URLs.NSIDC_RESOURCE.value,
                 URLs.MOD11A2_V061_RESOURCE.value,
                 URLs.LAADS_RESOURCE.value,
-		URLs.LAADS_CLOUD_RESOURCE.value,
+                URLs.LAADS_CLOUD_RESOURCE.value,
                 URLs.MODISA_L3b_CHL_V061_RESOURCE.value,
                 URLs.MODISA_L3b_CHL_V061_RESOURCE_SCI.value,
             ] and link.href.path.endswith(ext):
