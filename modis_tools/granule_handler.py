@@ -3,7 +3,7 @@ from pathlib import Path
 from typing import Any, Iterable, List, Optional, Tuple, Type, TypeVar, Union
 from urllib.parse import urlsplit
 
-from pydantic.v1.networks import AnyUrl, HttpUrl
+from pydantic.networks import AnyUrl, HttpUrl
 from requests.auth import HTTPProxyAuth
 from requests.models import Response
 from tqdm import tqdm
